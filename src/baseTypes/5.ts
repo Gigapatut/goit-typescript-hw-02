@@ -3,5 +3,9 @@
   І так само визначте змінну, яка може приймати тільки одне з двох рядкових значень: 'enable' або 'disable' (literal type)?
 */
 
-let union;
-let literal;
+import { LiteralType } from "../../node_modules/typescript/lib/typescript";
+
+let union: string | number;
+
+type literalType = "enable" | "disable";
+let literal: literalType;
